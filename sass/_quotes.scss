@@ -1,0 +1,47 @@
+.quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 60rem) {
+        flex-direction: row;
+
+        .quote:nth-child(2){
+            transform: translateY(0.625rem);
+        }
+
+        .quote:nth-child(3){
+            transform: translateY(1.25rem);
+        }
+    }
+
+    .quote {
+        background-color: var(--very-dark-magenta);
+        color: var(--white);
+        padding: 2rem;
+        border-radius: .5rem;
+        text-align:left ;
+
+        .split {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            img {
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            div {
+                .name {
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                }
+
+                .status {
+                    color: var(--soft-pink);
+                }
+            }
+        }
+    }
+}

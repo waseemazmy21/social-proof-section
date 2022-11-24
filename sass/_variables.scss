@@ -1,0 +1,19 @@
+:root {
+
+    // Primary
+    --very-dark-magenta:  hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    // neutral
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+
+    --fs-400: 0.9375rem;
+    --fs-900: 2rem;
+
+    @media (min-width: 60rem) {
+        --fs-900: 3rem;
+    }
+}

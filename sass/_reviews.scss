@@ -1,0 +1,46 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .review {
+        background-color: var(--light-grayish-magenta);
+        color: var(--very-dark-magenta);
+        font-weight: 700;
+        padding: 1rem;
+        border-radius: .5rem;
+        max-width: 25rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 60rem) {
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 2rem;
+            padding-left: 1.75rem;
+            max-width: 28.125rem;
+
+            &:first-child {
+                transform: translateX(-5rem);
+            }
+        
+            &:nth-child(2) {
+                transform: translateX(-2.5rem);
+            }
+        }
+    }
+
+
+    .review::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 16px; 
+        background-image: url(/dist/images/icon-star.svg);
+        background-repeat: space;
+    }
+}
