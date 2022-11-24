@@ -189,7 +189,7 @@ h1 {
   display: block;
   width: 100px;
   height: 16px;
-  background-image: url(/dist/images/icon-star.svg);
+  background-image: url(../images/icon-star.svg);
   background-repeat: space;
 }
 
